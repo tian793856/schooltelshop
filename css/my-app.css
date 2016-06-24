@@ -1,0 +1,45 @@
+.swiper-container {
+    height: 200px;
+}
+.swiper-slide {
+    background:#fff;
+}
+.swiper-slide span {
+    text-align:center;
+    display:block;
+    margin:20px;
+    font-size:21px;
+}
+.catagary{
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 100px;
+    background: #ffffff;
+}
+.catagary a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.catagary .catitem{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.catitem img{
+    width: 70%;
+    position: absolute;
+    top:10px;
+    left: 15%;
+}
+.catagary h4{
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.demo-icon-1,.demo-icon-2,.demo-icon-3,.demo-icon-4{
+    background: url("../images/cat-button1.png");
+    height: 25px;
+    width: 25px;
+}

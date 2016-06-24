@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./bower_components/Framework7/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="./bower_components/Framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="./css/my-app.css">
+    <title>66营业厅</title>
+</head>
+
+<body>
+    <!--左侧面板-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">66网上营业厅</div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+
+                    <div class="page-content">
+                        <!--幻灯片开始-->
+                        <div class="swiper-container">
+                            <!-- Slides wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="images/banner1.jpg" alt="幻灯一"></div>
+                                <div class="swiper-slide"><img src="images/banner2.jpg" alt="幻灯一"></div>
+                                <div class="swiper-slide"><img src="images/banner3.jpg" alt="幻灯一"></div>
+                            </div>
+                            <!-- Pagination, if required -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <!--幻灯片结束-->
+                        <!--分类导航开始-->
+                        <div class="row catagary no-gutter">
+                            <div class="col-20">
+                                <a href="#">
+                                    <span class="catitem cat1">
+                                        <img src="images/cat-button1.png">
+                                    </span>
+                                    <h4>宽带</h4>
+                                </a>
+                            </div>
+                            <div class="col-20">
+                                <a href="#">
+                                    <span class="catitem cat1">
+                                        <img src="images/cat-button2.png">
+                                    </span>
+                                    <h4>上号</h4>
+                                </a>
+                            </div>
+                            <div class="col-20">
+                                <a href="#">
+                                    <span class="catitem cat1">
+                                        <img src="images/cat-button3.png">
+                                    </span>
+                                    <h4>话费</h4>
+                                </a>
+                            </div>
+                            <div class="col-20">
+                                <a href="#">
+                                    <span class="catitem cat1">
+                                        <img src="images/cat-button4.png">
+                                    </span>
+                                    <h4>流量</h4>
+                                </a>
+                            </div>
+                            <div class="col-20">
+                                <a href="#">
+                                    <span class="catitem cat1">
+                                        <img src="images/cat-button5.png">
+                                    </span>
+                                    <h4>宽带时长</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <!--商品列表-->
+                        <div class="row prolist no-gutter">
+                            <ul>
+                                <li class="col-50">
+                                    <img src="images">
+                                </li>
+                                <li class="col-50">
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar tabbar tabbar-labels">
+                <div class="toolbar-inner">
+                    <a href="#tab1" class="tab-link active">
+                        <i class="icon demo-icon-1"></i>
+                        <span class="tabbar-label">首页</span>
+                    </a>
+                    <a href="#tab2" class="tab-link">
+                        <i class="icon demo-icon-2">
+                            <span class="badge bg-red">5</span>
+                        </i>
+                        <span class="tabbar-label">发现</span>
+                    </a>
+                    <a href="#tab3" class="tab-link">
+                        <i class="icon demo-icon-3"></i>
+                        <span class="tabbar-label">订单</span>
+                    </a>
+                    <a href="#tab4" class="tab-link">
+                        <i class="icon demo-icon-4"></i>
+                        <span class="tabbar-label">我的</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="./bower_components/Framework7/dist/js/framework7.min.js"></script>
+<script type="text/javascript" src="./js/my-app.js"></script>
+</body>
+</html>
